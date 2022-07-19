@@ -10,6 +10,7 @@ public class Course {
 
     public Course(String name) {
         this.name = name;
+        this.participants = new ArrayList<Student>();
     }
 
     public String getName() {

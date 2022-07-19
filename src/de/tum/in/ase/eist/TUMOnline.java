@@ -1,6 +1,7 @@
 package de.tum.in.ase.eist;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class TUMOnline {
 
@@ -22,7 +23,9 @@ public class TUMOnline {
 
     public Student findStudentByName(String forename, String surname) {
         for (Student student : this.enrolledStudents) {
-            if (student.getForename() == forename && student.getSurname() == surname) {
+            String studentForename = student.getForename();
+            String studentSurname = student.getSurname();
+            if (studentForename.equals(forename) && studentSurname.equals(surname)) {
                 return student;
             }
         }

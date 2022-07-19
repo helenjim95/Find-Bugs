@@ -15,8 +15,7 @@ public class Student {
     }
 
     public void setForename(String forename) {
-        forename.replaceAll("[^A-Za-z\\-]", "");
-        this.forename = forename;
+        this.forename = forename.replaceAll("[^A-Za-z\\-]", "");
     }
 
     public String getSurname() {
@@ -24,7 +23,6 @@ public class Student {
     }
 
     public void setSurname(String surname) {
-        surname.replaceAll("[^A-Za-z\\-]", "");
-        this.surname = surname;
+        this.surname = surname.replaceAll("[^A-Za-z\\-]", "");
     }
 }
